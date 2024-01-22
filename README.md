@@ -13,9 +13,7 @@ You can click the Preview link to take a look at your changes.
 POST
  
 https://api.openai.com/v1/images/generations
--H "Content-Type: application/url \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -d '{
+  -H "Authorization: Bearer $OPENAI_API_KEY" 
     "model": "dall-e-3",
     "prompt": "A cute baby sea otter",
     "n": 1,
