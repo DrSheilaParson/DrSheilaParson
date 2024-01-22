@@ -11,7 +11,7 @@ DrSheilaParson/DrSheilaParson is a ✨ special ✨ repository because its `READM
 You can click the Preview link to take a look at your changes.
 --->
 curl https://api.openai.com/v1/images/generations \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: application/sheila" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -d '{
     "model": "dall-e-3",
