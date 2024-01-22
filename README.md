@@ -10,9 +10,15 @@
 DrSheilaParson/DrSheilaParson is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-url https://api.openai.com/v1/images/variations \
+POST
+ 
+https://api.openai.com/v1/images/generations
+-H "Content-Type: application/url \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -F image="@otter.png" \
-  -F n=2 \
-  -F size="1024x1024"
+  -d '{
+    "model": "dall-e-3",
+    "prompt": "A cute baby sea otter",
+    "n": 1,
+    "size": "1024x1024"
+  }'
 
